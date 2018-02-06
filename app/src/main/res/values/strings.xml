@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Quiz Programme</string>
+    <string name="lotrr">LordOfTheRings</string>
+    <string name="harry_potter">Harry Potter</string>
+    <string name="star_wars">Star Wars</string>
+    <string name="gerard_butler">Gerard Butler</string>
+    <string name="hugh_jackman">Hugh Jackman</string>
+    <string name="keanu_reeves">Keanu Reeves</string>
+    <string name="kevin_hart">Kevin Hart</string>
+    <string name="jodie_foster">Jodie Foster</string>
+    <string name="jason_segel">Jason Segel</string>
+    <string name="jim_carrey">Jim Carrey</string>
+    <string name="lesslie">Lesslie Mann</string>
+    <string name="natalia_portman">Natalia Portman</string>
+    <string name="edit">Name</string>
+    <string name="like">Did you like quiz?</string>
+    <string name="yes">Yes</string>
+    <string name="question1">Question#1 In Which Movie Includes Lightsaber War?</string>
+    <string name="question2">Question#2 Which Actor Was In a Role of Wolverine?</string>
+    <string name="question3">Question#3 Which Actress Played In Black Swan?</string>
+    <string name="question4">Question#4 Which Actor Played In How I Met Your Mother?</string>
+    <string name="submitButton">Send</string>
+
+</resources>

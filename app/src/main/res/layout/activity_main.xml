@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.android.whichone.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/question1"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lordof" />
+
+                        <RadioButton
+                            android:id="@+id/lordOftheRings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedMovie"
+                            android:text="@string/lotrr" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="117dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/harry" />
+
+                        <RadioButton
+                            android:id="@+id/harry_potter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedMovie"
+                            android:text="@string/harry_potter" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/starwars" />
+
+                        <RadioButton
+                            android:id="@+id/star_wars"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedMovie"
+                            android:text="@string/star_wars" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/question2"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/gerardbutler" />
+
+                        <RadioButton
+                            android:id="@+id/gerard_butler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActor"
+                            android:text="@string/gerard_butler" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/hugh" />
+
+                        <RadioButton
+                            android:id="@+id/hugh_jackman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActor"
+                            android:text="@string/hugh_jackman" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ken" />
+
+                        <RadioButton
+                            android:id="@+id/keanu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActor"
+                            android:text="@string/keanu_reeves" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/question3"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lessliemann" />
+
+                        <RadioButton
+                            android:id="@+id/lessli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActress"
+                            android:text="@string/lesslie" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="117dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/jodiefoster" />
+
+                        <RadioButton
+                            android:id="@+id/jodie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActress"
+                            android:text="@string/jodie_foster" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/nataliaportman" />
+
+                        <RadioButton
+                            android:id="@+id/natalia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedActress"
+                            android:text="@string/natalia_portman" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/question4"
+                    android:textColor="#212121"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/kevinhart" />
+
+                        <RadioButton
+                            android:id="@+id/kevin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedComedy"
+                            android:text="@string/kevin_hart" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:layout_width="117dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/jasonsegel" />
+
+                        <RadioButton
+                            android:id="@+id/jason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedComedy"
+                            android:text="@string/jason_segel" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/jim" />
+
+                        <RadioButton
+                            android:id="@+id/jim_carrey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClickedComedy"
+                            android:text="@string/jim_carrey" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/edit"
+                    android:inputType="textCapWords"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/like"
+                    android:textColor="#212121"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkboxyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="agreedYes"
+                    android:paddingLeft="24dp"
+                    android:text="@string/yes"
+                    android:textColor="#212121"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="26dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="submitSend"
+                    android:text="@string/submitButton"
+                    android:textColor="#212121"
+                    android:textSize="20dp"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
